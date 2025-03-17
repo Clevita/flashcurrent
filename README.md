@@ -30,13 +30,30 @@ Flash Current is a dynamic and user-friendly news application designed to delive
  - auto_size_text: ^3.0.0
  - curved_navigation_bar: ^1.0.6
  
-This project is a starting point for a Flutter application.
+### Firebase installation
+ #### 1. Create a Firebase Project
+ - Go to Firebase Console.
+ - Click "Add Project" and enter your project name.
+ - Configure Google Analytics (optional) and create the project.
+#### 2. Add Firebase to your Flutter app
+- Select flutter platform
+- Install the Firebase CLI and log in (run firebase login)
+- Install the Flutter SDK
+- Create a Flutter project (run flutter create)
+- Enter commands
+- dart pub global activate flutterfire_cli
+- flutterfire configure --project=project-43135
+- In your project select which platforms you want to use
+- Then automatcally it generates firebase_options.dart file.
+- ### News api
+- First singup newapi
+- Then generate a apikey
+- We use this apikey for appending the value to url
+###  How approach the tash
+- First authenticated the user
+- Then used News api for fetching data of news
+- In home page we categorise it and shows the news
+- when we click the news it redirected the orginal use
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
