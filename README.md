@@ -1,6 +1,7 @@
 # flashcurrent
 
-A new Flutter project.
+flash current is a daily news feed app.
+## Video of Project
 
 ## Getting Started
 
