@@ -10,8 +10,8 @@ import 'app/routes/app_pages.dart';
 void main() async{
      WidgetsFlutterBinding.ensureInitialized();
     await Hive.initFlutter();
-//     var box = await Hive.openBox('shopywell_localdb');
-// await box.clear();
+    var box = await Hive.openBox('flashcurrent_localdb');
+await box.clear();
  if(!(Hive.isBoxOpen('flashcurrent_localdb'))){
     final taskBox = await Hive.openBox('flashcurrent_localdb');
  }

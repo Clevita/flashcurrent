@@ -217,12 +217,12 @@ Widget Password_textformfield(){
                                                     .is_visiblepassword.value ==
                                                 false
                                             ? Icon(
-                                                LineIcons.eyeSlash,
+                                                LineIcons.eyeAlt,
                                                 color: Colors.black,
                                                 size: 30,
                                               )
                                             : Icon(
-                                                LineIcons.eyeAlt,
+                                                LineIcons.eyeSlash,
                                                 color: Colors.black,
                                                 size: 30,
                                               ),
@@ -306,12 +306,12 @@ Widget Confirm_Password_textformfield(){
                                                     .is_visiblepassword1.value ==
                                                 false
                                             ? Icon(
-                                                LineIcons.eyeSlash,
+                                                LineIcons.eyeAlt,
                                                 color: Colors.black,
                                                 size: 30,
                                               )
                                             : Icon(
-                                                LineIcons.eyeAlt,
+                                                LineIcons.eyeSlash,
                                                 color: Colors.black,
                                                 size: 30,
                                               ),

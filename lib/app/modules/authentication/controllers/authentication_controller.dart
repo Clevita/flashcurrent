@@ -61,7 +61,7 @@ class AuthenticationController extends GetxController {
           print(e);
         }
 
-        // Get.offAndToNamed(Routes.STARTEPAGE);
+         Get.offAndToNamed(Routes.STARTPAGE);
       } else {
         is_login.value = false;
       }
@@ -90,8 +90,8 @@ class AuthenticationController extends GetxController {
       final hive_taskdata = await Hive.box('flashcurrent_localdb');
       final credential =
           await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: "clevitamerinepereira21@gmail.com",
-        password: "111222",
+        email: txt_email_controller.text,
+        password: txt_password_controller.text,
       );
       print(credential);
       FirebaseAuth.instance.authStateChanges().listen((User? user) {
@@ -145,6 +145,11 @@ class AuthenticationController extends GetxController {
       try {
         await FirebaseAuth.instance.sendPasswordResetEmail(
             email: txt_forgotemail_controller.text.trim());
+             Constants.Awsome_SnackBar(
+            elevation: 10,
+            title: "Info",
+            message: "Password reset link is send!",
+            snackbar_type: Awsome_snackbar_contentype.success.name);
       } on FirebaseAuthException catch (e) {
         Constants.Awsome_SnackBar(
             elevation: 2,
